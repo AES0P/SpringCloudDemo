@@ -1,0 +1,19 @@
+Eureka Server 服务中心
+Eureka Client 服务提供者
+Eureka Discovery Client 服务消费者
+
+创建Eureka Server
+Spring Cloud使用erureka server, 然后所有需要访问配置文件的应用都作为一个erureka client注册上去。eureka是一个高可用的组件，它没有后端缓存，每一个实例注册之后需要向注册中心发送心跳，在默认情况下erureka server也是一个eureka client ,必须要指定一个 server。
+
+Ribbon是分布式微服务架构中负载均衡的一个解决方案，我们只需要引入ribbon依赖，然后初始化一个RestTemplate对象，在其上添加@LoadBalanced注解，就可以实现请求的负载均衡。
+添加了@LoadBalanced注解的RestTemplate执行时，会进入LoadBalancerInterceptor的intercept方法，接着会进入ribbon的RibbonLoadBalancerClient类，在该类中通过serviceId获取负载平衡器，然后通过其内部的负载平衡规则获取具体的Server实例，最后回到InterceptingClientHttpRequest.execute方法，通过包装的ServiceRequestWrapper.getURI()方法，调用RibbonLoadBalancerClient.reconstructURI方法拼接具体的请求uri，然后执行http请求。
+
+
+在微服务架构中，根据业务来拆分成一个个的服务，服务与服务之间可以相互调用（RPC），在Spring Cloud可以用RestTemplate+Ribbon和Feign来调用。为了保证其高可用，单个服务通常会集群部署。由于网络原因或者自身的原因，服务并不能保证100%可用，如果单个服务出现问题，调用这个服务就会出现线程阻塞，此时若有大量的请求涌入，Servlet容器的线程资源会被消耗完毕，导致服务瘫痪。服务与服务之间的依赖性，故障会传播，会对整个微服务系统造成灾难性的严重后果，这就是服务故障的“雪崩”效应。为了解决这个问题，业界提出了断路器模型。
+Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一组件进行了整合。 在微服务架构中，一个请求需要调用多个服务是非常常见的，如下图：
+较底层的服务如果出现故障，会导致连锁故障。当对特定的服务的调用的不可用达到一个阀值（Hystric 是5秒20次） 断路器将会被打开。
+断路打开后，可用避免连锁故障，fallback方法可以直接返回一个固定值。
+
+待解决：
+1、断路器集群
+2、分布式client端无法启动

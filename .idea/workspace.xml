@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b7d5dad-2afd-4069-87e7-9697eb57bc38" name="Default Changelist" comment="1、Create project&#10;                                                                           Aesop&#10;                                                                           2019/12/18">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudDemo01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/java/com/hzero/demo/springcloud/configclient/ConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/java/com/hzero/demo/springcloud/configclient/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/main/resources/config/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client/src/test/java/com/hzero/demo/springcloud/configclient/ConfigClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/hzero/demo/springcloud/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/config-client-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/hzero/demo/springcloud/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/java/com/hzero/demo/springcloud/customerfeign/CustomerFeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/java/com/hzero/demo/springcloud/customerfeign/config/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/java/com/hzero/demo/springcloud/customerfeign/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/java/com/hzero/demo/springcloud/customerfeign/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/java/com/hzero/demo/springcloud/customerfeign/service/CustomerServiceFailure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-feign/src/test/java/com/hzero/demo/springcloud/customerfeign/CustomerFeignApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/java/com/hzero/demo/springcloud/customerribbon/CustomerRibbonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/java/com/hzero/demo/springcloud/customerribbon/config/RibbonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/java/com/hzero/demo/springcloud/customerribbon/controller/CustomerControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/java/com/hzero/demo/springcloud/customerribbon/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-ribbon/src/test/java/com/hzero/demo/springcloud/customerribbon/CustomerRibbonApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/com/hzero/demo/springcloud/eureka/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/config/application-server-1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/config/application-server-2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/config/application-server-3.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/test/java/com/hzero/demo/springcloud/eureka/EurekaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/hzero/demo/springcloud/productor/ProductorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/hzero/demo/springcloud/productor/controller/Productor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/resources/config/application-productor-1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/resources/config/application-productor-2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/resources/config/application-productor-3.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/test/java/com/hzero/demo/springcloud/productor/ProductorApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/src/main/java/com/hzero/demo/springcloud/turbine/TurbineApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbine/src/test/java/com/hzero/demo/springcloud/turbine/TurbineApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/hzero/demo/springcloud/zuul/ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/hzero/demo/springcloud/zuul/config/ZuulConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/hzero/demo/springcloud/zuul/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/test/java/com/hzero/demo/springcloud/zuul/ZuulApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../maven/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\hand_h0_excise\maven\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V6WmEGCyM3KLJie4fj3xYC5SWG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hzero.demo.springcloud.zuul" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\config-server\src\main\resources" />
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\client-server\src\main\resources" />
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\client-server\src\main\java\com\hzero\demo\springcloud\clientserver" />
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\client-server\src\main" />
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\client-server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hzero.demo.springcloud.turbine.config" />
+      <recent name="com.hzero.demo.springcloud.customerfeign.service" />
+      <recent name="com.hzero.demo.springcloud.customerribbon.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\config\src\main\resources" />
+      <recent name="D:\hand_h0_excise\H0\project\backend\8.SpringCloud\SpringCloudDemo01\config-client\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Config-Client">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="customer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="customer" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Config-Client" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.configclient.ConfigClientApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Config-Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.configserver.ConfigServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerFeign" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.customerfeign.CustomerFeignApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRibbon" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer-ribbon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.customerribbon.CustomerRibbonApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka-Server-1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.eureka.EurekaApplication" />
+      <option name="ACTIVE_PROFILES" value="server-1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka-Server-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.eureka.EurekaApplication" />
+      <option name="ACTIVE_PROFILES" value="server-2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka-Server-3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.eureka.EurekaApplication" />
+      <option name="ACTIVE_PROFILES" value="server-3" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Productor-1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="productor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.productor.ProductorApplication" />
+      <option name="ACTIVE_PROFILES" value="productor-1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Productor-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="productor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.productor.ProductorApplication" />
+      <option name="ACTIVE_PROFILES" value="productor-2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Productor-3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="productor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.productor.ProductorApplication" />
+      <option name="ACTIVE_PROFILES" value="productor-3" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Turbine" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="turbine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.turbine.TurbineApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Zuul" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hzero.demo.springcloud.zuul.ZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Eureka-Server-1" />
+      <item itemvalue="Spring Boot.Eureka-Server-2" />
+      <item itemvalue="Spring Boot.Eureka-Server-3" />
+      <item itemvalue="Spring Boot.Config-Server" />
+      <item itemvalue="Spring Boot.Config-Client" />
+      <item itemvalue="Spring Boot.Productor-1" />
+      <item itemvalue="Spring Boot.Productor-2" />
+      <item itemvalue="Spring Boot.Productor-3" />
+      <item itemvalue="Spring Boot.CustomerFeign" />
+      <item itemvalue="Spring Boot.CustomerRibbon" />
+      <item itemvalue="Spring Boot.Turbine" />
+      <item itemvalue="Spring Boot.Zuul" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b7d5dad-2afd-4069-87e7-9697eb57bc38" name="Default Changelist" comment="" />
+      <created>1576574181425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576574181425</updated>
+      <workItem from="1576574183792" duration="5354000" />
+      <workItem from="1576632877561" duration="14605000" />
+      <workItem from="1576658026208" duration="14187000" />
+      <workItem from="1576673460012" duration="1966000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="1、Create project&#10;                                                                           Aesop&#10;                                                                           2019/12/18" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、Create project&#10;                                                                           Aesop&#10;                                                                           2019/12/18" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="30" key="#Notifications" timestamp="1576672948246">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="30" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1576672948246" />
+    <state x="184" y="20" width="1165" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576675029303">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="20" width="1165" height="685" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1576675029303" />
+    <state x="398" y="177" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576672108803">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="398" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1576672108803" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1576661732049">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1576661732049" />
+    <state x="449" y="157" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576673716194">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="449" y="157" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1576673716194" />
+    <state x="110" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576671225376">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="110" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.738@0.0.1366.738" timestamp="1576671225376" />
+    <state x="466" y="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1576671231374">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="466" y="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.738@0.0.1366.738" timestamp="1576671231374" />
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576672655573">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1576672655573" />
+    <state x="119" y="0" key="CommitChangelistDialog2" timestamp="1576675412417">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="119" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576675412417" />
+    <state x="463" y="112" key="FileChooserDialogImpl" timestamp="1576675319503">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="112" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1576675319503" />
+    <state x="508" y="266" width="373" height="205" key="Github.CreateGistDialog" timestamp="1576659346159">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="508" y="266" width="373" height="205" key="Github.CreateGistDialog/0.0.1366.738@0.0.1366.738" timestamp="1576659346159" />
+    <state width="1323" height="236" key="GridCell.Tab.0.bottom" timestamp="1576675191143">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1576675191143" />
+    <state width="1323" height="236" key="GridCell.Tab.0.center" timestamp="1576675191143">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1576675191143" />
+    <state width="1323" height="236" key="GridCell.Tab.0.left" timestamp="1576675191142">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1576675191142" />
+    <state width="1323" height="236" key="GridCell.Tab.0.right" timestamp="1576675191143">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1576675191143" />
+    <state width="1323" height="236" key="GridCell.Tab.1.bottom" timestamp="1576675169640">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1576675169640" />
+    <state width="1323" height="236" key="GridCell.Tab.1.center" timestamp="1576675169640">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1576675169640" />
+    <state width="1323" height="236" key="GridCell.Tab.1.left" timestamp="1576675169640">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1576675169640" />
+    <state width="1323" height="236" key="GridCell.Tab.1.right" timestamp="1576675169640">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1576675169640" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1576673703984">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1576673703984" />
+    <state x="57" y="72" key="new project wizard" timestamp="1576674611171">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="57" y="72" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1576674611171" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1576666161729">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1576666161729" />
+  </component>
+</project>

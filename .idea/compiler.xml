@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
+        <module name="productor" />
+        <module name="config-server" />
+        <module name="customer-feign" />
+        <module name="eureka" />
+        <module name="config-client" />
+        <module name="turbine" />
+        <module name="customer-ribbon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-server" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="customer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudDemo01" options="" />
+      <module name="client-server" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="customer" options="-parameters" />
+      <module name="customer-feign" options="-parameters" />
+      <module name="customer-ribbon" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="productor" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

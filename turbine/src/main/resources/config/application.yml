@@ -1,0 +1,37 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: eureka-turbine
+
+eureka:
+  instance:
+    hostname: localhost
+    # 表示eureka client间隔多久去拉取服务注册信息，默认为30秒，如果要迅速获取服务注册状态，可以缩小该值
+    lease-renewal-interval-in-seconds: 5
+    # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
+    # 默认为90秒
+    # 如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。
+    # 如果该值设置太小了，则instance则很可能因为临时的网络抖动而被摘除掉。
+    # 该值至少应该大于 leaseRenewalIntervalInSeconds
+    lease-expiration-duration-in-seconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/,http://${eureka.instance.hostname}:8763/eureka/
+
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: eureka-discovery-customer-ribbon, eureka-discovery-customer-feign
+  #指定集群的名称为default，当服务实例非常多的时候，可以启动多个Turbine来
+  #构建不同的聚合集群，而该参数可以区分这些不同的集群，同时该参数可以在
+  #Hystrix仪表盘中用来定位不同的聚合集群，只需在Hystrix Stream的URL中通过cluster
+  #参数来指定。
+  cluster-name-expression: new String("default")
+  #当该参数未true时，可以让同一主机上的服务通过主机名与端口号
+  #的组合来进行区分，默认情况下会以host来区分不同的服务，这
+  #会使得在本地调试的时候，本机上不同服务聚合成一个服务来统计
+  combine-host-port: true
+
+
