@@ -10,7 +10,6 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
     # 表示eureka client间隔多久去拉取服务注册信息，默认为30秒，如果要迅速获取服务注册状态，可以缩小该值
     lease-renewal-interval-in-seconds: 5
     # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
@@ -23,4 +22,8 @@ eureka:
     serviceUrl:
       #使用defaultZone向服务器注册服务，否则就算该服务运行起来了，但没有向服务器注册服务，也是使用不了的
       #可以同时注册多个服务中心
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/,http://${eureka.instance.hostname}:8763/eureka/
+      #虽然只配置了server1,但是其他server都有该client，这是因为eureka是通过在各个节点进行复制来达到高可用的目的。
+      #defaultZone: http://eureka-server-1:8761/eureka/
+      #在Client端添加多个eureka地址的原因是避免自己注册的eureka单点挂掉。只要自己注册的eureka还在，那么后续添加N个eureka的其他server，所有注册信息都会被复制过去。
+      defaultZone: http://eureka-server-1:8761/eureka/,http://eureka-server-2:8762/eureka/,http://eureka-server-3:8763/eureka/
+

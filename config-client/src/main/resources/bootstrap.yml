@@ -1,0 +1,14 @@
+#  远端传输的配置文件加载顺序是：
+#  bootstrap.*里面的配置  --》连接ConfigServer，加载远程配置----》加载application.*里面的配置
+#  为了保证配置中心服务端的服务高可用，一般会进行集群配置。那么配置中心客户端，就要采取访问服务名的方式，访问配置中心服务端
+spring:
+  cloud:
+    config:
+      name: config-client
+      profile: dev #配置环境，对应config server中的{profile}
+      fail-fast: true #启动一个服务时无法连接到服务端能够快速返回失败
+      uri: http://localhost:13801 #配置中心地址
+#      label: trunk #配置分支(不配置则默认：git则是master,svn则是trunk)，
+#      discovery:
+#        enabled: true
+#        service-id: config-server #指定配置中心的service-id，便于扩展为高可用配置集群。

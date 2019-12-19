@@ -24,9 +24,9 @@ eureka:
     lease-expiration-duration-in-seconds: 15
     # 默认30s. 服务刷新时间配置，每隔这个时间会主动心跳一次
     lease-renewal-interval-in-seconds: 5
-    hostname: localhost
+    hostname: eureka-server-2
   client:
-    registerWithEureka: false #禁止向eureka注册服务，因为它自己本身就是服务器
-    fetchRegistry: false #不需要抓取注册表
+#    registerWithEureka: false #禁止向eureka注册服务，因为它自己本身就是服务器
+#    fetchRegistry: false #不需要抓取注册表
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka-server-1:8761/eureka/,http://eureka-server-3:8763/eureka/

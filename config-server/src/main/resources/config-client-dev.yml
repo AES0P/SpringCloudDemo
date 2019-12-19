@@ -7,8 +7,9 @@
 #/{label}/{application}-{profile}.properties
 #本例，使用的是第二条规则，命名文件。
 
+#将该文件放置 C:/config-server/ 目录下
 server:
-  port: 52601
+  port: 9595
 
 spring:
   application:
@@ -16,7 +17,6 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
     # 表示eureka client间隔多久去拉取服务注册信息，默认为30秒，如果要迅速获取服务注册状态，可以缩小该值
     lease-renewal-interval-in-seconds: 15
     # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
@@ -27,7 +27,7 @@ eureka:
     lease-expiration-duration-in-seconds: 45
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/,http://${eureka.instance.hostname}:8763/eureka/
+      defaultZone: http://eureka-server-1:8761/eureka/,http://eureka-server-2:8762/eureka/,http://eureka-server-3:8763/eureka/
 
 # 配置客户端输出演示用
-info: local-config-client-dev
+info: local-config-client-dev-aesop

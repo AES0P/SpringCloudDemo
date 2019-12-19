@@ -10,6 +10,7 @@ public class ConfigServerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ConfigServerApplication.class, args);
+        System.out.println("http://localhost:13801/config-client-dev.yml");
     }
 
 }
